@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalde Kaç Alsam Geçerim?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="calculator-card">
+            <h1>Geçme Notu Hesaplayıcı</h1>
+            <p class="subtitle">Vize notunu gir, finalde kaç alman gerektiğini öğren.</p>
+            
+            <div class="input-group">
+                <label for="midterm">VİZE_NOTU_GİR</label>
+                <input type="number" id="midterm" placeholder="0-100" min="0" max="100">
+            </div>
+            
+            <button id="calculate-btn">Hesapla</button>
+            
+            <div class="result-container" id="result-container">
+                <div class="result-label">Gereken Final Notu:</div>
+                <div class="result-value" id="result-value">--</div>
+                <div class="formula-info">Formül: (50 - (Vize × 0.40)) / 0.60</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
